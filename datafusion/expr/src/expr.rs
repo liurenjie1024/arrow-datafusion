@@ -415,6 +415,10 @@ impl std::fmt::Display for Expr {
     }
 }
 
+impl Eq for Expr {
+
+}
+
 impl fmt::Debug for Expr {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         match self {
