@@ -833,7 +833,7 @@ impl ToStringifiedPlan for LogicalPlan {
 }
 
 /// Join type
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[derive(Clone, Debug, Hash, Eq, PartialEq)]
 pub enum JoinType {
     /// Inner Join
     Inner,
